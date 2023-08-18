@@ -1,10 +1,10 @@
-import os
+import matplotlib.pyplot as plt
+from PIL import Image
 
-# 安装you-get库
-# pip install you-get
+img_path = 'data\Chapter3\狗狗2.jpg'
 
-# 视频链接
-video_url = "https://www.bilibili.com/video/BV1sN411Y7Ws"
+img = Image.open(img_path)
 
-# 下载视频
-os.system(f"you-get {video_url}")
+plt.imshow(img)
+plt.axis('off')
+plt.show()
